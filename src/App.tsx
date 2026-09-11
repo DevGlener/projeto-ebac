@@ -1,17 +1,14 @@
+import { RouterProvider } from 'react-router-dom';
+import Router from './routes';
+import GlobalStyle from './styles/Globals';
 
 function App() {
-
-
   return (
     <>
-     <h1>Hello, Vite!</h1>
-
+      <RouterProvider router={Router} />
+      <GlobalStyle />
     </>
-  )
+  );
 }
 
-export default App
-
-
-
-
+export default App;
