@@ -6,13 +6,13 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    list-style: none;
   }
 
   body {
-    max-width: 1366px;
     width: 100%;
-    list-style: none;
     .container {
+      width: 64rem;
       margin: 0 auto;
     }
   }
