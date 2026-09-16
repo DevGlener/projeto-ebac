@@ -10,14 +10,6 @@ export const CardContainer = styled.div`
   flex-direction: column;
   column-gap: 0.5rem;
   position: relative;
-
-  p {
-    font-size: 0.875rem;
-    font-weight: 400;
-    font-style: unset;
-    line-height: 1.375rem;
-    margin: 0.5rem 0;
-  }
 `;
 
 export const CardTags = styled.div`
@@ -41,6 +33,7 @@ export const TagCustom = styled(TagContainer)`
 export const CardTitle = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8px;
   div {
     display: flex;
     gap: 0.5rem;
@@ -49,21 +42,4 @@ export const CardTitle = styled.div`
 export const CardInfos = styled.div`
   padding: 0.5rem;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  button {
-    font-size: 0.875rem;
-    background-color: ${colors.orange};
-    color: ${colors.white};
-    width: 5.125rem;
-    height: 1.75rem;
-    border: none;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-  }
-  p {
-    font-size: 12px;
-  }
 `;

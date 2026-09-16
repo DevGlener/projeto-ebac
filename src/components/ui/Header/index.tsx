@@ -1,10 +1,23 @@
-import logo from '../../../assets/images/logo.svg';
 import { Banner } from './style';
+import logo from '../../../assets/images/logo.svg';
 
-function Header() {
+interface HeaderProps {
+  quantity?: number;
+  name?: string;
+  text?: string;
+}
+
+function Header({ quantity, text, name }: HeaderProps) {
   return (
     <Banner>
-      <img src={logo} alt="imagem da logo" />
+      <div className="container">
+        <h3>{name}</h3>
+        <img src={logo} alt={`ìmagem da ${logo}`} />
+        <h3>
+          {quantity}
+          {text}
+        </h3>
+      </div>
       <p>Viva experiências gastronômicas no conforto da sua casa</p>
     </Banner>
   );

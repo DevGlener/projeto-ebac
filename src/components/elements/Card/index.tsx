@@ -6,22 +6,22 @@ export interface CardProps {
   image: string;
   icon?: string;
   nota?: number;
-  description: string;
   infos?: string[];
   children: ReactNode;
+  className?: string;
 }
 
 export default function Card({
+  className,
   title,
   image,
   nota,
-  description,
   children,
   icon,
   infos = [],
 }: CardProps) {
   return (
-    <CardContainer>
+    <CardContainer className={className}>
       <img src={image} alt={title} />
       <CardTags>
         {infos.map((info) => (
@@ -36,8 +36,7 @@ export default function Card({
             {icon && <img src={icon} alt={`Ícone de ${title}`} />}
           </div>
         </CardTitle>
-        <p>{description}</p>
-        {children}
+        <p>{children}</p>
       </CardInfos>
     </CardContainer>
   );

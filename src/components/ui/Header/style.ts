@@ -12,6 +12,17 @@ export const Banner = styled.div`
   align-items: center;
   gap: 8.625rem;
 
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  h3 {
+    color: ${colors.orange};
+  }
+
   p {
     color: ${colors.orange};
     font-size: 2.25rem;
