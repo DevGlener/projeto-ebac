@@ -1,4 +1,4 @@
-import { Banner } from './style';
+import { HeaderContainer } from './style';
 import logo from '../../../assets/images/logo.svg';
 
 interface HeaderProps {
@@ -9,7 +9,7 @@ interface HeaderProps {
 
 function Header({ quantity, text, name }: HeaderProps) {
   return (
-    <Banner>
+    <HeaderContainer>
       <div className="container">
         <h3>{name}</h3>
         <img src={logo} alt={`ìmagem da ${logo}`} />
@@ -19,7 +19,7 @@ function Header({ quantity, text, name }: HeaderProps) {
         </h3>
       </div>
       <p>Viva experiências gastronômicas no conforto da sua casa</p>
-    </Banner>
+    </HeaderContainer>
   );
 }
 

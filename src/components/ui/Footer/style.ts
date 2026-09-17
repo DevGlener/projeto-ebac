@@ -8,6 +8,7 @@ export const FooterContainer = styled.div`
   background-position: center;
   padding: 2.5rem 0;
   height: 18.625rem;
+  margin-top: auto;
 
   p {
     color: ${colors.orange};
@@ -19,6 +20,7 @@ export const FooterContainer = styled.div`
     margin: 0 auto;
   }
 `;
+
 export const Redes = styled.div`
   display: flex;
   justify-content: center;

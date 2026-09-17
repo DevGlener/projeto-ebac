@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Background from '../../../assets/images/background.png';
 import colors from '../../../styles/colors';
 
-export const Banner = styled.div`
+export const HeaderContainer = styled.div`
   background-image: url('${Background}');
   background-size: cover;
   height: 24rem;
@@ -12,8 +12,7 @@ export const Banner = styled.div`
   align-items: center;
   gap: 8.625rem;
 
-  div {
-    width: 100%;
+  .container {
     display: flex;
     align-items: center;
     justify-content: space-between;

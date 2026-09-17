@@ -1,54 +1,45 @@
 import styled from 'styled-components';
+import { HeaderContainer } from '../../components/ui/Header/style';
 import Card from '../../components/elements/Card';
 import colors from '../../styles/colors';
 import Button from '../../components/elements/Button';
-import { BaanerContainer } from '../../components/elements/Banner/style';
-import Header from '../../components/ui/Header';
 
 export const ProfileContainer = styled.div`
-  position: relative;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3.5rem auto 7.5rem auto;
+    gap: 32px;
+  }
 
-  ${BaanerContainer} {
-    position: absolute;
-    top: 10.125rem;
-    left: 0;
-    width: 100%;
-    font-size: 2rem;
-    font-family: unset;
-
-    h5 {
-      font-weight: 100;
-    }
-    h4 {
-      font-weight: bold;
+  ${HeaderContainer} {
+    display: flex;
+    align-items: center;
+    height: 186px;
+    p {
+      display: none;
     }
   }
-`;
-export const ListCards = styled.ul`
-  margin: 112px auto 7.5rem auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-`;
 
+  .titles {
+    display: flex;
+    flex-direction: column;
+  }
+`;
 export const CardEdit = styled(Card)`
-  padding: 0.5rem;
   background-color: ${colors.orange};
   color: ${colors.white};
   height: 338px;
-`;
-export const ButonEdit = styled(Button)`
-  color: ${colors.orange};
-  background-color: ${colors.orangeCard};
-  width: 100%;
-  height: 24px;
-  font-size: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8px;
+  padding: 8px;
 `;
 
-export const HeaderEdit = styled(Header)`
-  height: 11.625rem;
+export const ButtonEdit = styled(Button)`
+  width: 100%;
+  background-color: ${colors.backgroundP};
+  color: ${colors.orange};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  margin-top: 8px;
 `;
